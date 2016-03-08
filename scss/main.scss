@@ -1,0 +1,39 @@
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+
+body {
+    @include outer-container(90%);
+    text-align: center;
+    background-color: cadetblue;
+}
+
+body h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+body div input {
+    border: 2px blue solid;
+    padding: 2% 3%;
+    font-size: 14px;
+    margin-top: 1%;
+}
+#firstnumber, {
+    @include span-columns(4);
+    @include shift(2);
+}
+
+#secondnumber {
+    @include span-columns(4);
+}
+
+button, .button {
+    background-color: blue;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
