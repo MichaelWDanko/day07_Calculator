@@ -9,8 +9,8 @@ window.addEventListener('load', function () {
     resultButton.addEventListener('click', function () {
 
         //    
-        var num1 = parseInt(firstNumber.value);
-        var num2 = parseInt(secondNumber.value);
+        var num1 = parseFloat(firstNumber.value);
+        var num2 = parseFloat(secondNumber.value);
 
         //console.log(num1);
         //console.log(num2);
