@@ -1,7 +1,9 @@
 window.addEventListener('load', function () {
 
+    //--Variables--
     var firstNumber = document.getElementById('firstnumber');
     var secondNumber = document.getElementById('secondnumber');
+    var answer = document.getElementById("results");
     //Identfy the button to be clicked.
     var resultButton = document.getElementById('submit');
     resultButton.addEventListener('click', function () {
@@ -36,7 +38,6 @@ window.addEventListener('load', function () {
         //console.log(addition.checked);
         if (addition.checked === true) {
             var total = (num1 + num2);
-            var answer = document.getElementById("results");
             answer.value = total;
             console.log(answer.value);
 
@@ -45,7 +46,6 @@ window.addEventListener('load', function () {
         //Subtraction
         if (subtraction.checked === true) {
             var total = (num1 - num2);
-            var answer = document.getElementById("results");
             answer.value = total;
             console.log(answer.value);
         }
@@ -53,7 +53,6 @@ window.addEventListener('load', function () {
         //Multiplication
         if (multiplication.checked === true) {
             var total = (num1 * num2);
-            var answer = document.getElementById("results");
             answer.value = total;
             console.log(answer.value);
         }
@@ -61,17 +60,16 @@ window.addEventListener('load', function () {
         //Division
         if (division.checked === true) {
             var total = (num1 / num2);
-            var answer = document.getElementById("results");
             answer.value = total;
             console.log(answer.value);
         }
-    })
+    });
 
     var clear = document.getElementById('clear');
     clear.addEventListener('click', function () {
 
         firstNumber.value = null;
         secondNumber.value = null;
-
-    })
-})
+        answer.value = null;
+    });
+});
