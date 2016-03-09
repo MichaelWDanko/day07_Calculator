@@ -28,7 +28,7 @@ body div input {
     @include span-columns(4);
 }
 
-button, .button {
+button, .button, #clear {
     background-color: blue;
     padding: 15px 15px;
     font-size: 1.2em;

@@ -43,7 +43,7 @@ body div input {
   #secondnumber:last-child {
     margin-right: 0; }
 
-button, .button {
+button, .button, #clear {
   background-color: blue;
   padding: 15px 15px;
   font-size: 1.2em;

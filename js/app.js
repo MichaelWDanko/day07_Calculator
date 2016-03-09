@@ -1,11 +1,10 @@
 window.addEventListener('load', function () {
 
+    var firstNumber = document.getElementById('firstnumber');
+    var secondNumber = document.getElementById('secondnumber');
     //Identfy the button to be clicked.
     var resultButton = document.getElementById('submit');
-
     resultButton.addEventListener('click', function () {
-        var firstNumber = document.getElementById('firstnumber');
-        var secondNumber = document.getElementById('secondnumber');
 
         //    
         var num1 = parseInt(firstNumber.value);
@@ -66,10 +65,13 @@ window.addEventListener('load', function () {
             answer.value = total;
             console.log(answer.value);
         }
-
-
-
     })
 
+    var clear = document.getElementById('clear');
+    clear.addEventListener('click', function () {
 
+        firstNumber.value = null;
+        secondNumber.value = null;
+
+    })
 })
